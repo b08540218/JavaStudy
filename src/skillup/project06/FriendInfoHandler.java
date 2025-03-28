@@ -30,12 +30,12 @@ public class FriendInfoHandler {
 		인스턴스를 통합적으로 관리할 수 있다.
 		 */
 		if (choice==1) {
-			System.out.print("별명:");iNickname = scan.nextLine();
+			System.out.println("별명:");iNickname = scan.nextLine();
 			HighFriend high = new HighFriend(iName, iPhone, iAddr, iNickname);
 			myFriends.add(high);
 		}
 		else if (choice==2) {
-			System.out.print("전공:");iMajor = scan.nextLine();
+			System.out.println("전공:");iMajor = scan.nextLine();
 			myFriends.add(new UnivFriend(iName, iPhone, iAddr, iMajor));
 		}
 		/*
