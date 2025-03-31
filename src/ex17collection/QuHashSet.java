@@ -1,6 +1,7 @@
 package ex17collection;
 
 import java.util.HashSet;
+import java.util.Scanner;
 
 class Avengers {
 	String name;
@@ -27,7 +28,8 @@ class Avengers {
 public class QuHashSet {
 
 	public static void main(String[] args) {
-
+		Scanner scanner = new Scanner(System.in);
+		
 		HashSet<Avengers> set = new HashSet<Avengers>();
 
 		Avengers hero1 = new Avengers("토니스타크", "아이언맨", "Mark-48 수트");
@@ -45,8 +47,15 @@ public class QuHashSet {
 		{
 			System.out.println(av.toString());			
 		}
-	
 		
+		System.out.print("[검색할 이름을 작성하세요]");
+		String searchName = scanner.nextLine();
+		for (Avengers avengers : set) {
+			if(avengers.equals(searchName)) {
+				
+			}
+			
+		}
 	}
 
 }
